@@ -1,4 +1,6 @@
 html, body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -28,8 +30,8 @@ html, body {
 
 #navbar {
   background: rgba( 0, 0, 0, 0.3 );
-  backdrop-filter: blur( 6px );
-  -webkit-backdrop-filter: blur( 6px );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
   width: 100%;
   height: 50px;
   position: fixed;
@@ -38,6 +40,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   font-weight: light 300;
+  z-index: 10;
 }
 
 #navbar div {
@@ -89,6 +92,12 @@ header h1 {
   color: white;
 }
 
+#div-profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #profile-img {
   border: 2px solid white;
   border-radius: 50%;
@@ -104,6 +113,7 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   padding: 0px 200px;
+  margin-bottom: 60px;
 }
 
 #info {
